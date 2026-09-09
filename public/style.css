@@ -1,0 +1,358 @@
+body {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background:#111;
+
+    color:white;
+
+    padding:20px;
+
+    margin:0;
+
+}
+
+
+h1 {
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+
+h2 {
+
+    font-size:18px;
+
+}
+
+
+
+/* =====================
+   总布局
+===================== */
+
+
+.layout {
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+
+
+/* 左侧添加 */
+
+.left {
+
+    width:280px;
+
+    flex-shrink:0;
+
+}
+
+
+
+/* 右侧Bot区域 */
+
+.right {
+
+    flex:1;
+
+}
+
+
+
+/* =====================
+   面板
+===================== */
+
+
+.panel {
+
+
+    background:#1b1b1b;
+
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+    border:1px solid #333;
+
+
+}
+
+
+
+
+
+/* =====================
+   输入
+===================== */
+
+
+input {
+
+
+    width:100%;
+
+
+    box-sizing:border-box;
+
+
+    padding:8px;
+
+
+    margin:5px 0 10px;
+
+
+    background:#252525;
+
+
+    color:white;
+
+
+    border:1px solid #444;
+
+
+    border-radius:6px;
+
+
+}
+
+
+
+label {
+
+    font-size:13px;
+
+    color:#aaa;
+
+}
+
+
+
+/* =====================
+   复选框
+===================== */
+
+
+.checks label {
+
+
+    display:block;
+
+
+    margin:8px 0;
+
+
+    color:white;
+
+
+}
+
+
+
+/* =====================
+   Bot网格
+===================== */
+
+
+#bots {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(
+        auto-fill,
+        minmax(220px,1fr)
+    );
+
+
+    gap:12px;
+
+
+}
+
+
+
+
+
+/* =====================
+   Bot卡片
+===================== */
+
+
+.bot {
+
+
+    background:#1b1b1b;
+
+
+    padding:12px;
+
+
+    margin:0;
+
+
+    border-radius:10px;
+
+
+    border:1px solid #333;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+.bot h3 {
+
+
+    margin:0 0 8px;
+
+
+    font-size:16px;
+
+
+    color:#00bfff;
+
+
+}
+
+
+
+.bot p {
+
+
+    margin:5px 0;
+
+
+    color:#ccc;
+
+
+}
+
+
+
+
+
+/* =====================
+   状态
+===================== */
+
+
+.on {
+
+
+    color:#00ff55;
+
+
+    font-weight:bold;
+
+}
+
+
+
+.off {
+
+
+    color:#ff4444;
+
+
+    font-weight:bold;
+
+}
+
+
+
+/* =====================
+   按钮
+===================== */
+
+
+button {
+
+
+    padding:6px 10px;
+
+
+    margin:3px;
+
+
+    cursor:pointer;
+
+
+    background:#008cff;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:6px;
+
+
+    font-size:12px;
+
+
+}
+
+
+
+button:hover {
+
+
+    opacity:.8;
+
+
+}
+
+
+
+
+/* =====================
+   手机
+===================== */
+
+
+@media(max-width:800px){
+
+
+    .layout {
+
+
+        flex-direction:column;
+
+
+    }
+
+
+    .left {
+
+
+        width:100%;
+
+
+    }
+
+
+}

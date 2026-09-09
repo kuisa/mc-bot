@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        Minecraft Bot Manager
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<h1>
+    Minecraft Bot Manager
+</h1>
+
+
+
+<div class="layout">
+
+
+
+    <!-- 左侧：添加 Bot -->
+
+    <div class="left">
+
+
+        <div class="panel">
+
+
+            <h2>
+                添加 Bot
+            </h2>
+
+
+            <label>
+                服务器IP
+            </label>
+
+            <input
+                id="host"
+                placeholder="mc.example.com"
+            >
+
+
+
+            <label>
+                端口
+            </label>
+
+            <input
+                id="port"
+                value="25565"
+            >
+
+            <label>
+                Minecraft用户名
+            </label>
+
+            <input
+                id="username"
+                placeholder="例如 Steve"
+            >
+
+
+            <label>
+                Minecraft版本
+            </label>
+
+            <input
+                id="version"
+                placeholder="例如 1.20.4 留空自动检测"
+            >
+
+            <label>
+                服务器名称
+            </label>
+
+            <input
+                id="name"
+                placeholder="例如 服务器1"
+            >
+
+
+
+            <div class="checks">
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="antiAfk"
+                        checked
+                    >
+
+                    防AFK
+
+                </label>
+
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="autoChat"
+                    >
+
+                    自动聊天
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="autoStart"
+                        checked
+                    >
+
+                    开机自动启动
+
+                </label>
+
+
+            </div>
+
+
+
+            <button
+                type="button"
+                id="addBotButton"
+                onclick="addBot()"
+            >
+
+                添加 Bot
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- 右侧：状态 -->
+
+    <div class="right">
+
+
+        <h2>
+            运行状态
+        </h2>
+
+
+
+        <div id="bots">
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
